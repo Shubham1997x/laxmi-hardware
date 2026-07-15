@@ -24,7 +24,7 @@ export function HeroSection() {
         sizes="100vw"
         className="object-cover opacity-50"
       />
-      <div className="absolute inset-0 bg-linear-to-r from-slate-900 via-slate-900/40 to-slate-900/10" />
+      {/* <div className="absolute inset-0 bg-linear-to-r from-slate-900 via-slate-900/40 to-slate-900/10" /> */}
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-8 px-6 pt-20 pb-28 sm:pt-28 sm:pb-36">
         <motion.div
