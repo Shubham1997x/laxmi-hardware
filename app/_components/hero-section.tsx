@@ -15,7 +15,7 @@ const features = [
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative overflow-hidden bg-slate-900">
+    <section id="home" className="relative flex min-h-[50vh] items-center overflow-hidden bg-slate-900 ">
       <Image
         src="/hero.png"
         alt="Laxmi Hardware and Industrial store front"
@@ -26,7 +26,7 @@ export function HeroSection() {
       />
       {/* <div className="absolute inset-0 bg-linear-to-r from-slate-900 via-slate-900/40 to-slate-900/10" /> */}
 
-      <div className="relative mx-auto flex max-w-7xl flex-col gap-8 px-6 pt-20 pb-28 sm:pt-28 sm:pb-36">
+      <div className="relative flex w-full mx-auto max-w-7xl flex-col gap-8 px-6 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,17 +64,7 @@ export function HeroSection() {
             </EnquiryDialog>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-            {features.map(({ label, icon: Icon }) => (
-              <div
-                key={label}
-                className="flex items-center gap-2 text-base font-medium text-slate-200"
-              >
-                <Icon className="size-5 text-amber-400" />
-                {label}
-              </div>
-            ))}
-          </div>
+
         </motion.div>
       </div>
     </section>

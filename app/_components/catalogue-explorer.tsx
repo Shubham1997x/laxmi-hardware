@@ -64,13 +64,13 @@ export function CatalogueExplorer() {
           </Button>
         </form>
 
-        <div className="mt-8 flex flex-wrap justify-start gap-3">
+        <div className="mt-8 flex flex-wrap justify-start gap-2 sm:gap-3">
           {pillOptions.map((pill) => (
             <button
               key={pill}
               type="button"
               onClick={() => selectFilter(pill)}
-              className="rounded-full border border-border px-5 py-2.5 text-base font-medium text-slate-700 transition-colors hover:border-blue-600 hover:text-blue-700 data-[active=true]:border-blue-700 data-[active=true]:bg-blue-700 data-[active=true]:text-white"
+              className="whitespace-nowrap rounded-full border border-border px-3.5 py-1.5 text-sm font-medium leading-normal text-slate-700 transition-colors hover:border-blue-600 hover:text-blue-700 data-[active=true]:border-blue-700 data-[active=true]:bg-blue-700 data-[active=true]:text-white sm:px-5 sm:py-2.5 sm:text-base"
               data-active={activeFilter === pill}
             >
               {pill}
